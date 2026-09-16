@@ -39,6 +39,12 @@ squared_error <- deviations^2
 sum(squared_error)
 
 variance_manual <- (sum(squared_error)) / (length(y) - 1)
+variance_manual
+
+std_dev <- sqrt(variance_manual)
+std_dev
+
+sd(y)
 
 ###########
 # Quantiles
