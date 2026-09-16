@@ -1,0 +1,311 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage{graphicx,textcomp}
+\usepackage{natbib}
+\usepackage{setspace}
+\usepackage{fullpage}
+\usepackage{color}
+\usepackage[reqno]{amsmath}
+\usepackage{amsthm}
+\usepackage{fancyvrb}
+\usepackage{amssymb,enumerate}
+\usepackage[all]{xy}
+\usepackage{endnotes}
+\usepackage{lscape}
+\newtheorem{com}{Comment}
+\usepackage{float}
+\usepackage{hyperref}
+\newtheorem{lem} {Lemma}
+\newtheorem{prop}{Proposition}
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{cor}{Corollary}
+\newtheorem{obs}{Observation}
+\usepackage[compact]{titlesec}
+\usepackage{dcolumn}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+\usepackage{multirow}
+\usepackage{xcolor}
+\newcolumntype{.}{D{.}{.}{-1}}
+\newcolumntype{d}[1]{D{.}{.}{#1}}
+\definecolor{light-gray}{gray}{0.65}
+\usepackage{url}
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+	backgroundcolor=\color{backcolour},   
+	commentstyle=\color{codegreen},
+	keywordstyle=\color{magenta},
+	numberstyle=\tiny\color{codegray},
+	stringstyle=\color{codepurple},
+	basicstyle=\footnotesize,
+	breakatwhitespace=false,         
+	breaklines=true,                 
+	captionpos=b,                    
+	keepspaces=true,                 
+	numbers=left,                    
+	numbersep=5pt,                  
+	showspaces=false,                
+	showstringspaces=false,
+	showtabs=false,                  
+	tabsize=2
+}
+\lstset{style=mystyle}
+\newcommand{\Sref}[1]{Section~\ref{#1}}
+\newtheorem{hyp}{Hypothesis}
+
+\title{Problem Set 1}
+\date{Due: October 8, 2026}
+\author{Applied Stats/Quant Methods 1}
+\author{Owen Stidman}
+
+\begin{document}
+	\maketitle
+	
+	\section*{Instructions}
+	\begin{itemize}
+		\item Please show your work! You may lose points by simply writing in the answer. If the problem requires you to execute commands in \texttt{R}, please include the code you used to get your answers. Please also include the \texttt{.R} file that contains your code. If you are not sure if work needs to be shown for a particular problem, please ask.
+		\item Your homework should be submitted electronically on GitHub.
+		\item This problem set is due before 23:59 on Thursday October 8, 2026. No late assignments will be accepted.
+	\end{itemize}
+	
+	\vspace{1cm}
+	
+	\textbf{\textit{I relied heavily on StackOverflow, Google, and the Code Camp materials for assistance with the programming in this assignment. I did not use any AI. As I oppose AI in general, I will not use any AI during this Master's programme unless explicity instructed to do so by a professor or teaching assistant. }}
+	
+	\section*{Question 1: Education}
+	
+	A school counselor was curious about the average of IQ of the students in her school and took a random sample of 25 students' IQ scores. The following is the data set:\\
+	\vspace{.5cm}
+	
+	\lstinputlisting[language=R, firstline=51, lastline=51]{PS01.R}  
+	
+	
+	\vspace{1cm}
+	
+	\begin{enumerate}
+		\item Find a 90\% confidence interval for the average student IQ in the school (As a hint, you first need the mean and SD to create a CI):\\
+		
+		First, I calculate the mean and standard deviation to construct the confidence interval and assigning to objects with descriptive variable names:
+		\lstinputlisting[language=R, firstline=55, lastline=56]{PS01.R}
+		
+		Next, I return the values of the sample mean IQ and sample standard deviation:
+		\lstinputlisting[language=R, firstline=59, lastline=60]{PS01.R}
+		
+		The sample size \textit{n} = 25; therefore, the degrees of freedom \textit{df} = \textit{n}-1 = 24. The formula for a confidence interval for a mean is \textit{y-bar} ± \textit{t(s / sqrt(n))}, where \textit{y-bar} is the sample mean, \textit{t} is the critical value from the  \textit{t}-distribution, \textit{s} is the sample standard deviation, and \textit{n} is the sample size. The value \textit{s/sqrt(n)} is the standard error.
+		
+		As we know \textit{y-bar} (98.44 mean IQ, calculated previously), \textit{s} (13.09287, calculated previously), and \textit{n} (given), the only remaining unknown value is the critical value from the \textit{t}-distribution. 
+		
+		Using Table B (\textit{t}-distribution critical values) from the Agresti and Finlay 2009 textbook, we see that the critical value for a 90 percent confidence interval with degrees of freedom \textit{df} = 24 is \textit{t} = 1.711.
+		
+		Therefore, \textit{y-bar ± t(s / sqrt(n))} = 98.44 ± 1.711(13.09287/\textit{sqrt}(25))
+		
+		I calculate the lower and upper values of the 90 percent confidence interval and assign them to objects: 
+		\lstinputlisting[language=R, firstline=82, lastline=83]{PS01.R}
+		
+		I return the the lower and upper values of the interval:
+		\lstinputlisting[language=R, firstline=86, lastline=87]{PS01.R}
+		
+		This returns 93.95962 and 102.9204, respectively.
+		
+		\textbf{The 90 percent confidence interval for the mean IQ score is (93.95962, 102.9204).}
+		
+		\item Next, the school counselor was curious  whether  the average student IQ in her school is higher than the average IQ score (100) among all the schools in the country.\\ 
+		
+		\noindent Using the same sample, conduct the appropriate hypothesis test with $\alpha=0.05$.
+		
+		Although the counselor is wondering whether the mean IQ of students at the school is "higher than" (rather than "different than") the nationwide average IQ of 100, the sample mean of 98.44 is lower than 100. This suggests that, in spite of the counselor's framing, a two-sided significance test, rather than a one- sided test, is appropriate.
+		
+		\textbf{1. ASSUMPTIONS: }
+		
+		We can reasonably assume the sample was randomly selected, as the assignment states the counselor "took a random sample." 
+		
+		We can also reasonably assume the quantitative variable in question (IQ) has a normal population distribution, as "Most people score near the average range, which is designed to fit into a normal distribution curve" (Kendra Cherry, MSEd).
+		
+		\textbf{2. HYPOTHESES: }
+		
+		Let \textit{meanIQ} denote the mean IQ.
+		
+		\textit{Ho: meanIQ} = 100
+		
+		\textit{Ha: meanIQ} is not equal to 100
+		
+		\textbf{3. TEST STATISTIC: }
+		
+		The \textit{n} = 25 observations are summarized by a sample mean IQ of 98.44 and a sample standard deviation of 13.09287, both calculated previously.
+		
+		The degrees of freedom \textit{df = n} - 1 = 24. 
+		
+		The estimated standard error is \textit{se = s / sqrt (n)} = 13.09287 / 5.
+		
+		\lstinputlisting[language=R, firstline=126, lastline=126]{PS01.R}
+		
+		This computes to 2.618574.
+		
+		The value of the test statistic is the difference between the observed sample mean (98.44) and the population mean (100) divided by the standard error (2.618574).
+		
+		\lstinputlisting[language=R, firstline=132, lastline=133]{PS01.R}
+		
+		This computes to -0.5957439.
+		
+		In other words, the sample mean falls 0.5957439 estimated standard errors below the null hypothesis value of the mean. 
+		
+		\textbf{4. P-VALUE:}
+		
+		The P-value is the two-tail probability,  presuming \textit{Ho} is true, that \textit{t} would exceed 0.5957439 in absolute value.  From the \textit{t}-distribution with \textit{df} = 24, this two-tail probability is:
+		
+		\lstinputlisting[language=R, firstline=145, lastline=146]{PS01.R}
+		
+		Using the "pt" command in R (found online through a Google search, no AI  used), this computes to \textit{P} = 0.5569233.
+		
+		With our \textit{alpha}-level of 0.05, \textit{P} is greater than \textit{alpha}. 
+		
+		\textbf{5. CONCLUSION}
+		
+		\textbf{We fail to reject the null hypothesis at the \textit{alpha} = 0.05 significance level. The counselor's findings are not statistically significant. }
+	\end{enumerate}
+	
+	\newpage
+	
+	\section*{Question 2: Political Economy}
+	
+	\noindent Researchers are curious about what affects the amount of money communities spend on addressing homelessness. The following variables constitute our data set about social welfare expenditures in the USA. \\
+	\vspace{.5cm}
+	
+	
+	\begin{tabular}{r|l}
+		\texttt{State} &\emph{50 states in US} \\
+		\texttt{Y} & \emph{per capita expenditure on shelters/housing assistance in state}\\
+		\texttt{X1} &\emph{per capita personal income in state} \\
+		\texttt{X2} &  \emph{Number of residents per 100,000 that are "financially insecure" in state}\\
+		\texttt{X3} &  \emph{Number of people per thousand residing in urban areas in state} \\
+		\texttt{Region} &  \emph{1=Northeast, 2= North Central, 3= South, 4=West} \\
+	\end{tabular}
+	
+	\vspace{.5cm}
+	\noindent Explore the \texttt{expenditure} data set and import data into \texttt{R}.
+	\vspace{.5cm}
+	
+	I import the data into R and save a copy using the following commands:
+	\lstinputlisting[language=R, firstline=160, lastline=161]{PS01.R}
+	
+	I generate some preliminary exploratory statistics using the following commands:
+	\lstinputlisting[language=R, firstline=165, lastline=168]{PS01.R}
+	
+	The "str" command outputs the internal structure of the data frame, which in this case includes 50 observations -- i.e. 50 states -- of the six variables listed above. 
+	The "summary," "head," and "glimpse" commands produce the following output:
+	
+	\textbf{\textit{!!!!!!!!!!!!!!!!!!!!!!!!!!!!! FiNiSh tHiS sEcTiOn !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!}}
+	\textbf{\textit{!!!!!!!!!!!!!!!!!!!!!!!!!!!!! FINISH THIS SECTION !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!}}
+	\textbf{\textit{!!!!!!!!!!!!!!!!!!!!!!!!!!!!! FiNiSh tHiS sEcTiOn !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!}}
+	\textbf{\textit{!!!!!!!!!!!!!!!!!!!!!!!!!!!!! FINISH THIS SECTION !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!}}
+	\textbf{\textit{!!!!!!!!!!!!!!!!!!!!!!!!!!!!! FiNiSh tHiS sEcTiOn !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!}}
+	\textbf{\textit{!!!!!!!!!!!!!!!!!!!!!!!!!!!!! FINISH THIS SECTION !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!}}
+	\textbf{\textit{!!!!!!!!!!!!!!!!!!!!!!!!!!!!! FiNiSh tHiS sEcTiOn !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!}} \textbf{\textit{!!!!!!!!!!!!!!!!!!!!!!!!!!!!! FINISH THIS SECTION !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!}}
+	\textbf{\textit{!!!!!!!!!!!!!!!!!!!!!!!!!!!!! FiNiSh tHiS sEcTiOn !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!}} \textbf{\textit{!!!!!!!!!!!!!!!!!!!!!!!!!!!!! FINISH THIS SECTION !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!}}
+	
+	\lstinputlisting[language=R, firstline=42, lastline=42]{PS01.R}  
+	\vspace{.5cm}
+	\begin{itemize}
+		
+		\item
+		Please plot the relationships among \emph{Y}, \emph{X1}, \emph{X2}, and \emph{X3}? What are the correlations among them (you just need to describe the graph and the relationships among them)?
+		
+		\textbf{1. Relationship between Y (housing expenditure) and X1 (income)}
+		
+		I create a simple linear regression model and calculate the slope, intercept, and correlation (R-squared):
+		\lstinputlisting[language=R, firstline=174, lastline=176]{PS01.R}
+		
+		I generate the below scatterplot using the following code:
+		\lstinputlisting[language=R, firstline=182, lastline=191]{PS01.R}
+		
+		\includegraphics[scale=0.7]{housingByIncomePlot}\\
+		
+		This scatterplot shows a weak, positive association between per capita personal income and per capita expenditure on housing assistance. There do not appear to be any outliers in the data. The multiple R-squared value is  0.2827; the adjusted R-squared value is  0.2678. The linear regression model is \textit{per capita housing expenditure = 0.02458(per capita personal income) + 32.546152}.
+		
+		\textbf{2. Relationship between Y (housing expenditure) and X2 (financial insecurity)}
+		
+		I create a simple linear regression model and calculate the slope, intercept, and correlation (R-squared):
+		\lstinputlisting[language=R, firstline=197, lastline=199]{PS01.R}
+		
+		I generate the below scatterplot using the following code:
+		\lstinputlisting[language=R, firstline=205, lastline=216]{PS01.R}
+		
+		\includegraphics[scale=0.7]{housingByFinancialInsecurityPlot}
+		
+		This scatterplot shows a weak, positive association between the number of residents per 100,000 experiencing financial insecurity and per capita expenditure on housing assistance. There do not appear to be any outliers in the data. The multiple R-squared value is  0.201; the adjusted R-squared value is  0.1843. The linear regression model is \textit{per capita housing expenditure = 0.07019(residents per 100k experiencing financial insecurity) + 59.76104}.
+		
+		\textbf{3. Relationship between Y (housing expenditure) and X3 (urban population)}
+		
+		I create a simple linear regression model and calculate the slope, intercept, and correlation (R-squared):
+		\lstinputlisting[language=R, firstline=222, lastline=224]{PS01.R}
+		
+		I generate the below scatterplot using the following code:
+		\lstinputlisting[language=R, firstline=230, lastline=241]{PS01.R}
+		
+		\includegraphics[scale=0.7]{housingByUrbanPopulationPlot}
+		
+		This scatterplot shows a weak, positive association between the number of residents per 100,000 living in urban areas and per capita expenditure on housing assistance. The two observations representing the states with the most residents in urban areas and reltively low housing expenditures may be outliers. The multiple R-squared valus is  0.215; the	adjusted R-squared value is  0.1986. The linear regression model is \textit{per capita housing expenditure = 0.05917(residents per 100k in urban areas) + 46.30552}.
+		
+		\vspace{.5cm}
+		\item
+		Please plot the relationship between \emph{Y} and \emph{Region}? On average, which region has the highest per capita expenditure on housing assistance?
+		
+		Since region is a categorical variable and housing expenditure is a continuous variable, I use boxplots to compare housing expenditure by region.
+		
+		First, I convert the integer variable "Region," labeled 1-4, to a factor:
+		\lstinputlisting[language=R, firstline=261, lastline=261]{PS01.R}
+		
+		Next, I convert the 1-4 labels to descriptive names -- i.e. North, North Central, South, West -- and add the more descriptive variable "Regions" to the data frame:
+		\lstinputlisting[language=R, firstline=268, lastline=269]{PS01.R}
+		
+		I create the below boxplots using ggplot:
+		\lstinputlisting[language=R, firstline=271, lastline=276]{PS01.R}
+		\includegraphics[scale=0.75]{housingByRegionPlot}
+		
+		I calculate the mean housing expenditures for each region using the following commands:
+		\lstinputlisting[language=R, firstline=279, lastline=283]{PS01.R}
+		
+		The mean per capita housing expenditure in the Northeast US is 79.44 USD.
+		
+		The mean per capita housing expenditure in the North Central US is 83.92 USD.
+		
+		The mean per capita housing expenditure in the Southern US is 69.19 USD.
+		
+		The mean per capita housing expenditure in the Western US is 88.31 USD.
+		
+		\textbf{The West has the highest mean per capita housing expenditure.}
+		
+		\vspace{.5cm}
+		\item
+		Please plot the relationship between \emph{Y} and \emph{X1}? Describe this graph and the relationship. Reproduce the above graph including one more variable \emph{Region} and display different regions with different types of symbols and colors.
+		
+		\textbf{1. Plotting housing assistance expenditure against per capita income}
+		
+		I create a simple linear regression model of Y on X1 and calculate the slope, intercept, and R-squared:
+		\lstinputlisting[language=R, firstline=292, lastline=295]{PS01.R}
+		
+		I then create the below scatterplot of Y on X1 using this code:
+		\lstinputlisting[language=R, firstline=300, lastline=310]{PS01.R}
+		\includegraphics[scale=0.7]{housingByIncomePlot}\\
+		
+		This scatterplot shows a weak, positive association between per capita personal income and per capita expenditure on housing assistance. There do not appear to be any outliers in the data. The multiple R-squared value is  0.2827; the adjusted R-squared value is  0.2678. The linear regression model is \textit{per capita housing expenditure = 0.02458(per capita personal income) + 32.546152}.
+		
+		\textbf{2. Comparing all four regions in the same graph}
+		
+		To reproduce the above graph and add different colors, symbols, and regression lines for the different regions, I run the following code:
+		\lstinputlisting[language=R, firstline=322, lastline=332]{PS01.R}
+		\includegraphics[scale=0.85]{regionalHousingByIncomePlot}\\
+		
+		Across all four regions, there appears to be a weak, positive association between per capita personal income and per capita expenditure on housing assistance. The West has the most variation in the data, perhaps due to the region's large size and inclusion of both largely rural, poorer states, e.g. Idaho, and affluent states with major urban centers, e.g. California. 
+		
+	\end{itemize}
+	
+	
+\end{document}
