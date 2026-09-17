@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.22)  16 SEP 2026 14:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.22)  17 SEP 2026 10:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -920,83 +920,60 @@ Underfull \hbox (badness 10000) in paragraph at lines 119--120
 
  []
 
-[2] (./PS01.R) (./PS01.R) (./PS01.R) [3] (./PS01.R) (./PS01.R)
-Overfull \hbox (112.06172pt too wide) in paragraph at lines 204--212
-\OT1/cmr/bx/it/12 !!!!!!!!!!!!!!!!!!!!!!!!!!!!! FiN-iSh tHiS sEc-TiOn !!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!! !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
- []
-
-
-Overfull \hbox (7.80907pt too wide) in paragraph at lines 204--212
-\OT1/cmr/bx/it/12 FiN-iSh tHiS sEc-TiOn !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! !!
-!!!!!!!!!!!!!!!!!!!!!!!!!!! FIN-
- []
-
-
-Overfull \hbox (3.88297pt too wide) in paragraph at lines 204--212
-\OT1/cmr/bx/it/12 ISH THIS SEC-TION !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! !!!!!!
-!!!!!!!!!!!!!!!!!!!!!!! FiN-
- []
-
-
-Overfull \hbox (3.88297pt too wide) in paragraph at lines 204--212
-\OT1/cmr/bx/it/12 ISH THIS SEC-TION !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! !!!!!!
-!!!!!!!!!!!!!!!!!!!!!!! FiN-
- []
-
-(./PS01.R) [4] (./PS01.R) (./PS01.R)
-<housingByIncomePlot.pdf, id=70, 579.16376pt x 395.4775pt>
+[2] (./PS01.R) (./PS01.R) (./PS01.R) [3] (./PS01.R) (./PS01.R) [4] (./PS01.R)
+(./PS01.R) (./PS01.R [5])
+<housingByIncomePlot.pdf, id=82, 579.16376pt x 395.4775pt>
 File: housingByIncomePlot.pdf Graphic file (type pdf)
 <use housingByIncomePlot.pdf>
-Package pdftex.def Info: housingByIncomePlot.pdf  used on input line 228.
+Package pdftex.def Info: housingByIncomePlot.pdf  used on input line 268.
 (pdftex.def)             Requested size: 405.41187pt x 276.83235pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 228--229
+Underfull \hbox (badness 10000) in paragraph at lines 268--269
 
  []
 
-[5 <./housingByIncomePlot.pdf>] (./PS01.R) (./PS01.R)
-<housingByFinancialInsecurityPlot.pdf, id=95, 665.48625pt x 395.4775pt>
+(./PS01.R) (./PS01.R [6 <./housingByIncomePlot.pdf>])
+<housingByFinancialInsecurityPlot.pdf, id=105, 665.48625pt x 395.4775pt>
 File: housingByFinancialInsecurityPlot.pdf Graphic file (type pdf)
 <use housingByFinancialInsecurityPlot.pdf>
 Package pdftex.def Info: housingByFinancialInsecurityPlot.pdf  used on input li
-ne 240.
+ne 280.
 (pdftex.def)             Requested size: 465.83719pt x 276.83235pt.
 
-Overfull \hbox (25.45686pt too wide) in paragraph at lines 240--241
+Overfull \hbox (25.45686pt too wide) in paragraph at lines 280--281
 [][] 
  []
 
-[6 <./housingByFinancialInsecurityPlot.pdf>] (./PS01.R) (./PS01.R)
-<housingByUrbanPopulationPlot.pdf, id=122, 665.48625pt x 395.4775pt>
+(./PS01.R) [7 <./housingByFinancialInsecurityPlot.pdf>] (./PS01.R)
+<housingByUrbanPopulationPlot.pdf, id=129, 665.48625pt x 395.4775pt>
 File: housingByUrbanPopulationPlot.pdf Graphic file (type pdf)
 <use housingByUrbanPopulationPlot.pdf>
 Package pdftex.def Info: housingByUrbanPopulationPlot.pdf  used on input line 2
-52.
+92.
 (pdftex.def)             Requested size: 465.83719pt x 276.83235pt.
 
-Overfull \hbox (25.45686pt too wide) in paragraph at lines 252--253
+Overfull \hbox (25.45686pt too wide) in paragraph at lines 292--293
 [][] 
  []
 
-[7] (./PS01.R) (./PS01.R) (./PS01.R [8 <./housingByUrbanPopulationPlot.pdf>])
-<housingByRegionPlot.pdf, id=160, 659.46375pt x 397.485pt>
+[8 <./housingByUrbanPopulationPlot.pdf>] (./PS01.R) (./PS01.R) (./PS01.R)
+<housingByRegionPlot.pdf, id=155, 659.46375pt x 397.485pt>
 File: housingByRegionPlot.pdf Graphic file (type pdf)
 <use housingByRegionPlot.pdf>
-Package pdftex.def Info: housingByRegionPlot.pdf  used on input line 270.
+Package pdftex.def Info: housingByRegionPlot.pdf  used on input line 310.
 (pdftex.def)             Requested size: 494.59659pt x 298.113pt.
 
-Overfull \hbox (54.21626pt too wide) in paragraph at lines 270--271
+Overfull \hbox (54.21626pt too wide) in paragraph at lines 310--311
 [] 
  []
 
-(./PS01.R) [9 <./housingByRegionPlot.pdf>] (./PS01.R) (./PS01.R)
+(./PS01.R [9 <./housingByRegionPlot.pdf>]) (./PS01.R) (./PS01.R)
 File: housingByIncomePlot.pdf Graphic file (type pdf)
 <use housingByIncomePlot.pdf>
-Package pdftex.def Info: housingByIncomePlot.pdf  used on input line 296.
+Package pdftex.def Info: housingByIncomePlot.pdf  used on input line 336.
 (pdftex.def)             Requested size: 405.41187pt x 276.83235pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 296--297
+Underfull \hbox (badness 10000) in paragraph at lines 336--337
 
  []
 
@@ -1004,16 +981,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 296--297
 <regionalHousingByIncomePlot.pdf, id=204, 578.16pt x 402.50375pt>
 File: regionalHousingByIncomePlot.pdf Graphic file (type pdf)
 <use regionalHousingByIncomePlot.pdf>
-Package pdftex.def Info: regionalHousingByIncomePlot.pdf  used on input line 30
+Package pdftex.def Info: regionalHousingByIncomePlot.pdf  used on input line 34
 4.
 (pdftex.def)             Requested size: 491.43832pt x 342.12979pt.
 
-Overfull \hbox (51.058pt too wide) in paragraph at lines 304--305
+Overfull \hbox (51.058pt too wide) in paragraph at lines 344--345
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 304--305
+Underfull \hbox (badness 10000) in paragraph at lines 344--345
 
  []
 
@@ -1026,13 +1003,13 @@ Package rerunfilecheck Info: File `PS01.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 27485 strings out of 467525
- 477549 string characters out of 5418982
- 1200311 words of memory out of 5000000
- 55730 multiletter control sequences out of 15000+600000
+ 27488 strings out of 467525
+ 477625 string characters out of 5418982
+ 1237311 words of memory out of 5000000
+ 55733 multiletter control sequences out of 15000+600000
  639550 words of font info for 88 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,6n,104p,3236b,2150s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,6n,104p,3236b,2145s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pf
 b></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
@@ -1046,7 +1023,7 @@ l/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local
 /texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/t
 exlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/tex
 live/2026/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on PS01.pdf (12 pages, 229566 bytes).
+Output written on PS01.pdf (12 pages, 233888 bytes).
 PDF statistics:
  317 PDF objects out of 1000 (max. 8388607)
  264 compressed objects within 3 object streams
