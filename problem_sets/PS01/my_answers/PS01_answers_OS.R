@@ -330,3 +330,5 @@ ggplot(expenditure_demo, aes(x = X1, y = Y, color = Regions)) +
     method = "lm",
     formula = y ~ x,
     se = FALSE) 
+
+### END OF PROBLEM SET
