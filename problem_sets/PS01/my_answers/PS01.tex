@@ -97,14 +97,16 @@
 		
 		Next, I return the values of the sample mean IQ and sample standard deviation:
 		\lstinputlisting[language=R, firstline=59, lastline=60]{PS01.R}
+
 		
-		The sample size \textit{n} = 25; therefore, the degrees of freedom \textit{df} = \textit{n}-1 = 24. The formula for a confidence interval for a mean is \textit{y-bar} ± \textit{t(s / sqrt(n))}, where \textit{y-bar} is the sample mean, \textit{t} is the critical value from the  \textit{t}-distribution, \textit{s} is the sample standard deviation, and \textit{n} is the sample size. The value \textit{s/sqrt(n)} is the standard error.
+		The sample size \textit{n} = 25; therefore, the degrees of freedom \textit{df} = \textit{n}-1 = 24. The formula for a confidence interval for a mean is $\bar{y}$ ± \textit{t(s / $\sqrt{n}$)}, where $\bar{y}$ is the sample mean, \textit{t} is the critical value from the  \textit{t}-distribution, \textit{s} is the sample standard deviation, and \textit{n} is the sample size. The value s / $\sqrt{n}$ is the standard error.
 		
-		As we know \textit{y-bar} (98.44 mean IQ, calculated previously), \textit{s} (13.09287, calculated previously), and \textit{n} (given), the only remaining unknown value is the critical value from the \textit{t}-distribution. 
+		As we know $\bar{y}$ (98.44 mean IQ, calculated previously), \textit{s} (13.09287, calculated previously), and \textit{n} (given), the only remaining unknown value is the critical value from the \textit{t}-distribution. 
 		
 		Using Table B (\textit{t}-distribution critical values) from the Agresti and Finlay 2009 textbook, we see that the critical value for a 90 percent confidence interval with degrees of freedom \textit{df} = 24 is \textit{t} = 1.711.
 		
-		Therefore, \textit{y-bar ± t(s / sqrt(n))} = 98.44 ± 1.711(13.09287/\textit{sqrt}(25))
+		Therefore, $\bar{y}$ ± t(s / $\sqrt{n}$) = 98.44 ± 1.711(13.09287/$\sqrt{25}$)
+		= 98.44 ± 1.711(13.09287/5).
 		
 		I calculate the lower and upper values of the 90 percent confidence interval and assign them to objects: 
 		\lstinputlisting[language=R, firstline=82, lastline=83]{PS01.R}
@@ -132,9 +134,9 @@
 		
 		Let \textit{meanIQ} denote the mean IQ.
 		
-		\textit{Ho: meanIQ} = 100
+		\textit{$H_0$: meanIQ} = 100
 		
-		\textit{Ha: meanIQ} is not equal to 100
+		\textit{$H_a$: meanIQ} $\neq$ 100
 		
 		\textbf{3. TEST STATISTIC: }
 		
@@ -142,7 +144,7 @@
 		
 		The degrees of freedom \textit{df = n} - 1 = 24. 
 		
-		The estimated standard error is \textit{se = s / sqrt (n)} = 13.09287 / 5.
+		The estimated standard error is \textit{se = s / $\sqrt{n}$} = 13.09287 / 5.
 		
 		\lstinputlisting[language=R, firstline=126, lastline=126]{PS01.R}
 		
@@ -158,13 +160,13 @@
 		
 		\textbf{4. P-VALUE:}
 		
-		The P-value is the two-tail probability,  presuming \textit{Ho} is true, that \textit{t} would exceed 0.5957439 in absolute value.  From the \textit{t}-distribution with \textit{df} = 24, this two-tail probability is:
+		The P-value is the two-tail probability,  presuming $H_0$ is true, that \textit{t} would exceed 0.5957439 in absolute value.  From the \textit{t}-distribution with \textit{df} = 24, this two-tail probability is:
 		
 		\lstinputlisting[language=R, firstline=145, lastline=146]{PS01.R}
 		
-		Using the "pt" command in R (found online through a Google search, no AI  used), this computes to \textit{P} = 0.5569233.
+		Using the "pt" command in R \textbf{\textit{(found online through a Google search, no AI  used)}}, this computes to \textit{P} = 0.5569233.
 		
-		With our \textit{alpha}-level of 0.05, \textit{P} is greater than \textit{alpha}. 
+		With our $\alpha$-level of 0.05, \textit{P} $>$ $\alpha$. 
 		
 		\textbf{5. CONCLUSION}
 		
