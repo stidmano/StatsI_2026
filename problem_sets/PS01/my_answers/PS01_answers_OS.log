@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.22)  25 SEP 2026 13:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.22)  25 SEP 2026 13:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -928,10 +928,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 121--122
 <housingByIncomePlot.pdf, id=88, 579.16376pt x 395.4775pt>
 File: housingByIncomePlot.pdf Graphic file (type pdf)
 <use housingByIncomePlot.pdf>
-Package pdftex.def Info: housingByIncomePlot.pdf  used on input line 271.
+Package pdftex.def Info: housingByIncomePlot.pdf  used on input line 273.
 (pdftex.def)             Requested size: 405.41187pt x 276.83235pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 271--272
+Underfull \hbox (badness 10000) in paragraph at lines 273--274
 
  []
 
@@ -940,10 +940,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 271--272
 File: housingByFinancialInsecurityPlot.pdf Graphic file (type pdf)
 <use housingByFinancialInsecurityPlot.pdf>
 Package pdftex.def Info: housingByFinancialInsecurityPlot.pdf  used on input li
-ne 283.
+ne 285.
 (pdftex.def)             Requested size: 465.83719pt x 276.83235pt.
 
-Overfull \hbox (25.45686pt too wide) in paragraph at lines 283--284
+Overfull \hbox (25.45686pt too wide) in paragraph at lines 285--286
 [][] 
  []
 
@@ -953,10 +953,10 @@ Overfull \hbox (25.45686pt too wide) in paragraph at lines 283--284
 File: housingByUrbanPopulationPlot.pdf Graphic file (type pdf)
 <use housingByUrbanPopulationPlot.pdf>
 Package pdftex.def Info: housingByUrbanPopulationPlot.pdf  used on input line 2
-95.
+97.
 (pdftex.def)             Requested size: 465.83719pt x 276.83235pt.
 
-Overfull \hbox (25.45686pt too wide) in paragraph at lines 295--296
+Overfull \hbox (25.45686pt too wide) in paragraph at lines 297--298
 [][] 
  []
 
@@ -965,10 +965,10 @@ Overfull \hbox (25.45686pt too wide) in paragraph at lines 295--296
 <housingByRegionPlot.pdf, id=161, 659.46375pt x 397.485pt>
 File: housingByRegionPlot.pdf Graphic file (type pdf)
 <use housingByRegionPlot.pdf>
-Package pdftex.def Info: housingByRegionPlot.pdf  used on input line 313.
+Package pdftex.def Info: housingByRegionPlot.pdf  used on input line 315.
 (pdftex.def)             Requested size: 494.59659pt x 298.113pt.
 
-Overfull \hbox (54.21626pt too wide) in paragraph at lines 313--314
+Overfull \hbox (54.21626pt too wide) in paragraph at lines 315--316
 [] 
  []
 
@@ -976,10 +976,10 @@ Overfull \hbox (54.21626pt too wide) in paragraph at lines 313--314
 (./PS01_answers_OS.R)
 File: housingByIncomePlot.pdf Graphic file (type pdf)
 <use housingByIncomePlot.pdf>
-Package pdftex.def Info: housingByIncomePlot.pdf  used on input line 339.
+Package pdftex.def Info: housingByIncomePlot.pdf  used on input line 341.
 (pdftex.def)             Requested size: 405.41187pt x 276.83235pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 339--340
+Underfull \hbox (badness 10000) in paragraph at lines 341--342
 
  []
 
@@ -988,15 +988,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 339--340
 File: regionalHousingByIncomePlot.pdf Graphic file (type pdf)
 <use regionalHousingByIncomePlot.pdf>
 Package pdftex.def Info: regionalHousingByIncomePlot.pdf  used on input line 34
-7.
+9.
 (pdftex.def)             Requested size: 491.43832pt x 342.12979pt.
 
-Overfull \hbox (51.058pt too wide) in paragraph at lines 347--348
+Overfull \hbox (51.058pt too wide) in paragraph at lines 349--350
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 347--348
+Underfull \hbox (badness 10000) in paragraph at lines 349--350
 
  []
 
@@ -1031,7 +1031,7 @@ live/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texl
 ive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texli
 ve/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive
 /2026/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on PS01_answers_OS.pdf (13 pages, 260467 bytes).
+Output written on PS01_answers_OS.pdf (13 pages, 260720 bytes).
 PDF statistics:
  332 PDF objects out of 1000 (max. 8388607)
  274 compressed objects within 3 object streams
