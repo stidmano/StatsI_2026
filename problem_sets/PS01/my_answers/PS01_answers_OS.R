@@ -138,14 +138,14 @@ t
 
 # 4. P-VALUE:
 
-# The P-value is the two-tail probability,  presuming Ho is true, that t would
+# The P-value is the one-tail probability,  presuming Ho is true, that t would
 # exceed 0.5957439 in absolute value. 
 
-# From the t-distribution with df = 24, this two-tail probability is
-p_value <- 2*pt(-abs(t),df=length(y)-1)
+# From the t-distribution with df = 24, the one-tail probability is
+p_value <- pt(-abs(t),df=length(y)-1)
 p_value
-# Using the "pt" command in R (found online through a Google search, no AI 
-# used), this computes to P = 0.5569233.
+# Using the "pt" command in R, 
+# this computes to P = 0.2784617.
 # With our alpha-level of 0.05, P > alpha. 
 
 # We fail to reject the null hypothesis at the alpha = 0.05 significance level.
