@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.22)  23 SEP 2026 14:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.22)  25 SEP 2026 13:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -923,84 +923,84 @@ Underfull \hbox (badness 10000) in paragraph at lines 121--122
  []
 
 [2] (./PS01_answers_OS.R) (./PS01_answers_OS.R) (./PS01_answers_OS.R) [3]
-(./PS01_answers_OS.R) (./PS01_answers_OS.R) [4] (./PS01_answers_OS.R)
-(./PS01_answers_OS.R) (./PS01_answers_OS.R [5])
-<housingByIncomePlot.pdf, id=84, 579.16376pt x 395.4775pt>
+[4] (./PS01_answers_OS.R) (./PS01_answers_OS.R) [5] (./PS01_answers_OS.R)
+(./PS01_answers_OS.R) (./PS01_answers_OS.R [6])
+<housingByIncomePlot.pdf, id=88, 579.16376pt x 395.4775pt>
 File: housingByIncomePlot.pdf Graphic file (type pdf)
 <use housingByIncomePlot.pdf>
-Package pdftex.def Info: housingByIncomePlot.pdf  used on input line 270.
+Package pdftex.def Info: housingByIncomePlot.pdf  used on input line 271.
 (pdftex.def)             Requested size: 405.41187pt x 276.83235pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 270--271
+Underfull \hbox (badness 10000) in paragraph at lines 271--272
 
  []
 
-(./PS01_answers_OS.R) (./PS01_answers_OS.R [6 <./housingByIncomePlot.pdf>])
-<housingByFinancialInsecurityPlot.pdf, id=107, 665.48625pt x 395.4775pt>
+(./PS01_answers_OS.R) (./PS01_answers_OS.R [7 <./housingByIncomePlot.pdf>])
+<housingByFinancialInsecurityPlot.pdf, id=112, 665.48625pt x 395.4775pt>
 File: housingByFinancialInsecurityPlot.pdf Graphic file (type pdf)
 <use housingByFinancialInsecurityPlot.pdf>
 Package pdftex.def Info: housingByFinancialInsecurityPlot.pdf  used on input li
-ne 282.
+ne 283.
 (pdftex.def)             Requested size: 465.83719pt x 276.83235pt.
 
-Overfull \hbox (25.45686pt too wide) in paragraph at lines 282--283
+Overfull \hbox (25.45686pt too wide) in paragraph at lines 283--284
 [][] 
  []
 
-(./PS01_answers_OS.R) [7 <./housingByFinancialInsecurityPlot.pdf>]
+(./PS01_answers_OS.R) [8 <./housingByFinancialInsecurityPlot.pdf>]
 (./PS01_answers_OS.R)
-<housingByUrbanPopulationPlot.pdf, id=131, 665.48625pt x 395.4775pt>
+<housingByUrbanPopulationPlot.pdf, id=136, 665.48625pt x 395.4775pt>
 File: housingByUrbanPopulationPlot.pdf Graphic file (type pdf)
 <use housingByUrbanPopulationPlot.pdf>
 Package pdftex.def Info: housingByUrbanPopulationPlot.pdf  used on input line 2
-94.
+95.
 (pdftex.def)             Requested size: 465.83719pt x 276.83235pt.
 
-Overfull \hbox (25.45686pt too wide) in paragraph at lines 294--295
+Overfull \hbox (25.45686pt too wide) in paragraph at lines 295--296
 [][] 
  []
 
-[8 <./housingByUrbanPopulationPlot.pdf>] (./PS01_answers_OS.R)
+[9 <./housingByUrbanPopulationPlot.pdf>] (./PS01_answers_OS.R)
 (./PS01_answers_OS.R) (./PS01_answers_OS.R)
-<housingByRegionPlot.pdf, id=157, 659.46375pt x 397.485pt>
+<housingByRegionPlot.pdf, id=161, 659.46375pt x 397.485pt>
 File: housingByRegionPlot.pdf Graphic file (type pdf)
 <use housingByRegionPlot.pdf>
-Package pdftex.def Info: housingByRegionPlot.pdf  used on input line 312.
+Package pdftex.def Info: housingByRegionPlot.pdf  used on input line 313.
 (pdftex.def)             Requested size: 494.59659pt x 298.113pt.
 
-Overfull \hbox (54.21626pt too wide) in paragraph at lines 312--313
+Overfull \hbox (54.21626pt too wide) in paragraph at lines 313--314
 [] 
  []
 
-(./PS01_answers_OS.R [9 <./housingByRegionPlot.pdf>]) (./PS01_answers_OS.R)
+(./PS01_answers_OS.R [10 <./housingByRegionPlot.pdf>]) (./PS01_answers_OS.R)
 (./PS01_answers_OS.R)
 File: housingByIncomePlot.pdf Graphic file (type pdf)
 <use housingByIncomePlot.pdf>
-Package pdftex.def Info: housingByIncomePlot.pdf  used on input line 338.
+Package pdftex.def Info: housingByIncomePlot.pdf  used on input line 339.
 (pdftex.def)             Requested size: 405.41187pt x 276.83235pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 338--339
+Underfull \hbox (badness 10000) in paragraph at lines 339--340
 
  []
 
-[10] (./PS01_answers_OS.R)
-<regionalHousingByIncomePlot.pdf, id=206, 578.16pt x 402.50375pt>
+[11] (./PS01_answers_OS.R)
+<regionalHousingByIncomePlot.pdf, id=210, 578.16pt x 402.50375pt>
 File: regionalHousingByIncomePlot.pdf Graphic file (type pdf)
 <use regionalHousingByIncomePlot.pdf>
 Package pdftex.def Info: regionalHousingByIncomePlot.pdf  used on input line 34
-6.
+7.
 (pdftex.def)             Requested size: 491.43832pt x 342.12979pt.
 
-Overfull \hbox (51.058pt too wide) in paragraph at lines 346--347
+Overfull \hbox (51.058pt too wide) in paragraph at lines 347--348
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 346--347
+Underfull \hbox (badness 10000) in paragraph at lines 347--348
 
  []
 
-[11] [12 <./regionalHousingByIncomePlot.pdf>] (./PS01_answers_OS.aux)
+[12] [13 <./regionalHousingByIncomePlot.pdf>] (./PS01_answers_OS.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
@@ -1009,10 +1009,10 @@ Package rerunfilecheck Info: File `PS01_answers_OS.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 27486 strings out of 467525
- 478394 string characters out of 5418982
- 1237344 words of memory out of 5000000
- 55732 multiletter control sequences out of 15000+600000
+ 27488 strings out of 467525
+ 478412 string characters out of 5418982
+ 1237380 words of memory out of 5000000
+ 55733 multiletter control sequences out of 15000+600000
  639173 words of font info for 87 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,6n,104p,3247b,2145s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1031,10 +1031,10 @@ live/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texl
 ive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texli
 ve/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive
 /2026/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on PS01_answers_OS.pdf (12 pages, 258201 bytes).
+Output written on PS01_answers_OS.pdf (13 pages, 260467 bytes).
 PDF statistics:
- 327 PDF objects out of 1000 (max. 8388607)
- 270 compressed objects within 3 object streams
- 142 named destinations out of 1000 (max. 500000)
+ 332 PDF objects out of 1000 (max. 8388607)
+ 274 compressed objects within 3 object streams
+ 143 named destinations out of 1000 (max. 500000)
  38 words of extra memory for PDF output out of 10000 (max. 10000000)
 
