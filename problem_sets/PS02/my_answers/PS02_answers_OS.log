@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.22)  16 OCT 2026 19:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.22)  21 OCT 2026 13:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -889,6 +889,10 @@ Package hyperref Info: Link coloring OFF on input line 68.
 
 {/usr/local/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/loc
 al/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+Underfull \hbox (badness 10000) in paragraph at lines 100--101
+
+ []
+
 (/usr/local/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2025/11/14 1.11b listings language file
 )
@@ -898,12 +902,9 @@ File: lstlang2.sty 2025/11/14 1.11b listings language file
 (/usr/local/texlive/2026/texmf-dist/tex/latex/listings/lstlang3.sty
 File: lstlang3.sty 2025/11/14 1.11b listings language file
 )
-Underfull \hbox (badness 10000) in paragraph at lines 100--101
-
- []
-
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 101.
+nput line 103.
+
 (./PS02_answers_OS.R
 LaTeX Font Info:    Trying to load font information for OML+cmr on input line 4
 7.
@@ -914,35 +915,35 @@ File: omlcmr.fd 2024/11/19 v2.5n Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 47.
 ) [2]
-Underfull \hbox (badness 10000) in paragraph at lines 122--123
+Underfull \hbox (badness 10000) in paragraph at lines 124--125
 
  []
 
 (./PS02_answers_OS.R [3]) [4] (./PS02_answers_OS.R) [5] [6]
-Underfull \hbox (badness 10000) in paragraph at lines 175--176
+Underfull \hbox (badness 10000) in paragraph at lines 177--178
 
  []
 
 <duflo.png, id=164, 1093.08376pt x 576.1525pt>
 File: duflo.png Graphic file (type png)
 <use duflo.png>
-Package pdftex.def Info: duflo.png  used on input line 184.
+Package pdftex.def Info: duflo.png  used on input line 186.
 (pdftex.def)             Requested size: 437.22575pt x 230.45691pt.
 [7 <./duflo.png>] (./PS02_answers_OS.R) (./PS02_answers_OS.R) [8]
 (./PS02_answers_OS.R)
 <scatterplot.pdf, id=202, 482.80376pt x 402.50375pt>
 File: scatterplot.pdf Graphic file (type pdf)
 <use scatterplot.pdf>
-Package pdftex.def Info: scatterplot.pdf  used on input line 230.
+Package pdftex.def Info: scatterplot.pdf  used on input line 232.
 (pdftex.def)             Requested size: 434.51936pt x 362.25002pt.
  [9] (./PS02_answers_OS.R)
 <residualplot.pdf, id=223, 482.80376pt x 402.50375pt>
 File: residualplot.pdf Graphic file (type pdf)
 <use residualplot.pdf>
-Package pdftex.def Info: residualplot.pdf  used on input line 238.
+Package pdftex.def Info: residualplot.pdf  used on input line 240.
 (pdftex.def)             Requested size: 482.80258pt x 402.50276pt.
 
-Overfull \hbox (42.42226pt too wide) in paragraph at lines 238--239
+Overfull \hbox (42.42226pt too wide) in paragraph at lines 240--241
 [][]
  []
 
@@ -950,7 +951,7 @@ Overfull \hbox (42.42226pt too wide) in paragraph at lines 238--239
 <residualdensity.pdf, id=240, 531.9875pt x 402.50375pt>
 File: residualdensity.pdf Graphic file (type pdf)
 <use residualdensity.pdf>
-Package pdftex.def Info: residualdensity.pdf  used on input line 244.
+Package pdftex.def Info: residualdensity.pdf  used on input line 246.
 (pdftex.def)             Requested size: 425.59058pt x 322.00343pt.
  [11 <./residualplot.pdf>]
 [12 <./residualdensity.pdf>] (./PS02_answers_OS.aux)
@@ -964,11 +965,11 @@ Package rerunfilecheck Info: File `PS02_answers_OS.out' has not changed.
 Here is how much of TeX's memory you used:
  27495 strings out of 467525
  477588 string characters out of 5418982
- 1350596 words of memory out of 5000000
+ 1348705 words of memory out of 5000000
  55734 multiletter control sequences out of 15000+600000
  640164 words of font info for 91 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,10n,104p,3247b,2213s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,10n,104p,3247b,2217s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pf
 b></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
@@ -987,7 +988,7 @@ e/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive
 026/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/20
 26/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2026
 /texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on PS02_answers_OS.pdf (12 pages, 1104190 bytes).
+Output written on PS02_answers_OS.pdf (12 pages, 1104465 bytes).
 PDF statistics:
  384 PDF objects out of 1000 (max. 8388607)
  322 compressed objects within 4 object streams
