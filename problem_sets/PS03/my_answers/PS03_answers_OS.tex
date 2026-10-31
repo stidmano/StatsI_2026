@@ -117,9 +117,17 @@
 		\lstinputlisting[language=R, firstline=66, lastline=71]{PS03_answers_OS.R}
 		\includegraphics[scale=0.35]{problem1part2graph1}
 		
+		The scatterplot shows a moderate, positive association between the log of the difference in campaign spending between incumbent and challenger and the incumbent's share of the vote. There do not appear to be any outliers in the data. 
+		
 		I add the regression line using this code: 
 			\lstinputlisting[language=R, firstline=74, lastline=83]{PS03_answers_OS.R}
 		\includegraphics[scale=0.35]{problem1part2graph2}
+		
+		From the summary table above, the regression line equation is:
+		
+	\textbf{		$\hat{voteshare}$ = 0.579031 + 0.041666(\textit{difflog}) + $\epsilon$}
+		
+		An incumbent for whom the log of the difference in campaign spending between them and the challenger is zero would be expected to, on average, receive a 0.579031 share of the vote. For every one-unit increase in the log of the difference in spending between incumbent and challenger, the incumbent would expect to, on average, receive an additional 0.041666 share of the vote. \vspace{0.5cm}
 		
 		\item Save the residuals of the model in a separate object.	\vspace{0.5cm}
 		
@@ -162,6 +170,8 @@
 		\vspace{.5cm} Therefore:
 		
 \textbf{		$\hat{voteshare}$ = 0.579031 + 0.041666(\textit{difflog}) + $\epsilon$}
+
+	An incumbent for whom the log of the difference in campaign spending between them and the challenger is zero would be expected to, on average, receive a 0.579031 share of the vote. For every one-unit increase in the log of the difference in spending between incumbent and challenger, the incumbent would expect to, on average, receive an additional 0.041666 share of the vote. \vspace{0.5cm}
 		
 	\end{enumerate}
 	
@@ -199,9 +209,17 @@
 		\lstinputlisting[language=R, firstline=124, lastline=131]{PS03_answers_OS.R}
 		\includegraphics[scale=0.35]{problem2part2graph1}
 		
+		The scatterplot shows a weak, positive association between the log of the difference in campaign spending between challenger and incumbent and the vote share received by the presidential candidate of the incumbent's party.
+		
 			I add the regression line using this code: 
 		\lstinputlisting[language=R, firstline=134, lastline=145]{PS03_answers_OS.R}
 		\includegraphics[scale=0.35]{problem2part2graph2}
+		
+		From the summary table above, the regression line equation is:
+		
+			\textbf{		$\hat{presvote}$ = 0.507583 + 0.023837(\textit{difflog}) + $\epsilon$}
+		
+	A presidential candidate of the incumbent's party for whom the log of the difference in campaign spending between the incumbent and the challenger is zero would be expected to, on average, receive a 0.507583 share of the vote. For every one-unit increase in the log of the difference in spending between incumbent and challenger, the presidential candidate of the incumbent's party would expect to, on average, receive an additional 0.023837 share of the vote. \vspace{0.5cm}
 		
 		\item Save the residuals of the model in a separate object.	\vspace{.5cm}
 		
@@ -239,7 +257,9 @@
 		
 		\vspace{.5cm} Therefore:
 		
-		\textbf{		$\hat{presvote}$ = 0.579031 + 0.041666(\textit{difflog}) + $\epsilon$}
+		\textbf{		$\hat{presvote}$ = 0.507583 + 0.023837(\textit{difflog}) + $\epsilon$}
+		
+		A presidential candidate of the incumbent's party for whom the log of the difference in campaign spending between the incumbent and the challenger is zero would be expected to, on average, receive a 0.507583 share of the vote. For every one-unit increase in the log of the difference in spending between incumbent and challenger, the presidential candidate of the incumbent's party would expect to, on average, receive an additional 0.023837 share of the vote. \vspace{0.5cm}
 		
 	\end{enumerate}
 	
@@ -282,10 +302,18 @@
 			\lstinputlisting[language=R, firstline=185, lastline=191]{PS03_answers_OS.R}
 			\includegraphics[scale=0.35]{problem3part2graph1}
 			
+			The scatterplot shows a moderate, positive association between the vote share received by the presidential candidate of the incumbent's party and the vote share received by the incumbent. 
+			
 			I add the regression line using the following code:
 			
 			\lstinputlisting[language=R, firstline=194, lastline=204]{PS03_answers_OS.R}
 			\includegraphics[scale=0.35]{problem3part2graph2}
+			
+			From the output table above, the regression line equation is:
+			
+				\textbf{		$\hat{voteshare}$ = 0.441330 + 0.388018(\textit{presvote}) + $\epsilon$}
+				
+			On average, an incumbent for whom the presidential candidate of their own party received no share of the votes can expect to themselves receive a 0.441330 share of the vote. For a one-unit increase in the presidential candidate's vote share (i.e., the candidate moves from 0 votes to a 1.0, or 100 percent share of the votes), the incumbent would expect to, on average, receive an additional 0.388018 share of the votes. 
 			
 		\item Write the prediction equation.
 		
@@ -320,6 +348,8 @@
 		\vspace{.5cm} Therefore:
 		
 		\textbf{		$\hat{voteshare}$ = 0.441330 + 0.388018(\textit{presvote}) + $\epsilon$}
+		
+					On average, an incumbent for whom the presidential candidate of their own party received no share of the votes can expect to themselves receive a 0.441330 share of the vote. For a one-unit increase in the presidential candidate's vote share (i.e., the candidate moves from 0 votes to a 1.0, or 100 percent share of the votes), the incumbent would expect to, on average, receive an additional 0.388018 share of the votes. 
 		
 	\end{enumerate}
 	
@@ -360,10 +390,22 @@
 			\lstinputlisting[language=R, firstline=239, lastline=248]{PS03_answers_OS.R}
 			\includegraphics[scale=0.35]{problem4part2graph1}
 			
+			The scatterplot shows a moderate, positive association between the residuals from regressing the presidential candidate vote share on the log of the difference in spending and the residuals from regressing incumbent vote share on the log of the difference in spending. 
+			
 		I add the regression line using the following code:
 		
 		\lstinputlisting[language=R, firstline=251, lastline=264]{PS03_answers_OS.R}
 		\includegraphics[scale=0.35]{problem4part2graph2}
+		
+		
+		
+	\vspace{1cm} From the summary table above, the regression line equation is:
+		
+		\textbf{		$\hat{residual from regressing voteshare on difflog}$ = (-1.942e-18) + (2.569e-01)(\textit{residual from regressing presvote on difflog}) + $\epsilon$}
+		
+		To simplify the below interpretation, I will use \textit{voteshare} as shorthand for "incumbent's share of the vote," \textit{presvote} as shorthand for "vote share of presidential candidate of the incumbent's party," and \textit{difflog} as shorthand for "log of difference in campaign spending between challenger and incumbent."
+		
+		On average, we could expect the residual from regressing \textit{voteshare} on \textit{difflog} for a data point where the residual from regressing \textit{presvote} on \textit{difflog} is zero to be -1.942e-18, i.e., close to zero. For a one-unit increase in the residual from regressing \textit{presvote} on \textit{difflog}, we can expect the residual from regressing \textit{voteshare} on \textit{difflog} for that data point to increase, on average, by 2.569e-01. \vspace{.5cm}
 		
 		\item Write the prediction equation.
 		
@@ -388,15 +430,19 @@
 			F-statistic:   477 on 1 and 3191 DF,  p-value: < 2.2e-16
 		\end{verbatim}
 		
-		From the output above:
+		\vspace{.5cm} From the output above:
 		
 		$\hat{\beta}_0$ (intercept) = -1.942e-18
 		
 		$\hat{\beta}_1$ (slope) = 2.569e-01
 		
-		\vspace{.5cm} Therefore:
+		\vspace{1cm} Therefore:
 		
 		\textbf{		$\hat{residual from regressing voteshare on difflog}$ = (-1.942e-18) + (2.569e-01)(\textit{residual from regressing presvote on difflog}) + $\epsilon$}
+		
+		To simplify the below interpretation, I will use \textit{voteshare} as shorthand for "incumbent's share of the vote," \textit{presvote} as shorthand for "vote share of presidential candidate of the incumbent's party," and \textit{difflog} as shorthand for "log of difference in campaign spending between challenger and incumbent."
+		
+			On average, we could expect the residual from regressing \textit{voteshare} on \textit{difflog} for a data point where the residual from regressing \textit{presvote} on \textit{difflog} is zero to be -1.942e-18, i.e., close to zero. For a one-unit increase in the residual from regressing \textit{presvote} on \textit{difflog}, we can expect the residual from regressing \textit{voteshare} on \textit{difflog} for that data point to increase, on average, by 2.569e-01.
 		
 	\end{enumerate}
 	
