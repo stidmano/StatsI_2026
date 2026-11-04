@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.22)  31 OCT 2026 19:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.22)  4 NOV 2026 16:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -994,58 +994,34 @@ Overfull \hbox (14.9275pt too wide) in paragraph at lines 398--399
 [] 
  []
 
-
-Overfull \hbox (14.86092pt too wide) in paragraph at lines 404--405
+[16 <./problem4part2graph2.png>]
+Overfull \hbox (14.86092pt too wide) in paragraph at lines 403--404
 [] $[]$ \OT1/cmr/bx/n/12 = (-1.942e-18) + (2.569e-01)(\OT1/cmr/bx/it/12 residua
 l
  []
 
-[16 <./problem4part2graph2.png>] (./PS03_answers_OS.R)
-Overfull \hbox (4.2199pt too wide) in paragraph at lines 431--431
+(./PS03_answers_OS.R)
+Overfull \hbox (4.2199pt too wide) in paragraph at lines 430--430
  []   \OT1/cmtt/m/n/12 residuals_presvote_difflog  2.569e-01  1.176e-02   21.84
    <2e-16 ***[] 
  []
 
-
-Overfull \hbox (14.86092pt too wide) in paragraph at lines 441--442
+[17]
+Overfull \hbox (14.86092pt too wide) in paragraph at lines 440--441
 [] $[]$ \OT1/cmr/bx/n/12 = (-1.942e-18) + (2.569e-01)(\OT1/cmr/bx/it/12 residua
 l
  []
 
-[17] [18] (./PS03_answers_OS.R) [19]
-Overfull \hbox (51.46185pt too wide) in paragraph at lines 510--534
-[]\OT1/cmr/m/n/12 ??????????????OK BUT WHY ARE THEY IDEN-TI-CAL????????????????
-?? ??????????????OK
+[18] (./PS03_answers_OS.R) [19]
+Overfull \hbox (4.21536pt too wide) in paragraph at lines 513--514
+[]\OT1/cmr/m/n/12 By the Frisch-Waugh-Lovell The-o-rem \OT1/cmr/m/it/12 (Stack-
+Over-flow)\OT1/cmr/m/n/12 , the resid-u-als from the partialled-
  []
 
 
-Overfull \hbox (92.74338pt too wide) in paragraph at lines 510--534
-\OT1/cmr/m/n/12 TI-CAL?????????????????? ??????????????OK BUT WHY ARE THEY IDEN
--TI-CAL??????????????????
- []
-
-
-Overfull \hbox (51.46185pt too wide) in paragraph at lines 510--534
-\OT1/cmr/m/n/12 ??????????????OK BUT WHY ARE THEY IDEN-TI-CAL??????????????????
- ??????????????OK
- []
-
-
-Overfull \hbox (92.74338pt too wide) in paragraph at lines 510--534
-\OT1/cmr/m/n/12 TI-CAL?????????????????? ??????????????OK BUT WHY ARE THEY IDEN
--TI-CAL??????????????????
- []
-
-
-Overfull \hbox (51.46185pt too wide) in paragraph at lines 510--534
-\OT1/cmr/m/n/12 ??????????????OK BUT WHY ARE THEY IDEN-TI-CAL??????????????????
- ??????????????OK
- []
-
-
-Overfull \hbox (92.74338pt too wide) in paragraph at lines 510--534
-\OT1/cmr/m/n/12 TI-CAL?????????????????? ??????????????OK BUT WHY ARE THEY IDEN
--TI-CAL?????????????????? 
+Overfull \hbox (3.83034pt too wide) in paragraph at lines 513--514
+\OT1/cmr/m/n/12 out residual-on-residual re-gres-sion are iden-ti-cal to the re
+sid-u-als of the full, non-partialled
  []
 
 [20] (./PS03_answers_OS.aux)
@@ -1077,7 +1053,7 @@ texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/t
 exlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/te
 xlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texl
 ive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on PS03_answers_OS.pdf (20 pages, 1643085 bytes).
+Output written on PS03_answers_OS.pdf (20 pages, 1653079 bytes).
 PDF statistics:
  347 PDF objects out of 1000 (max. 8388607)
  280 compressed objects within 3 object streams

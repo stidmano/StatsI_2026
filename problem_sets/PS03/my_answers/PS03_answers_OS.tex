@@ -387,7 +387,7 @@
 		
 		First, I generate a scatterplot using the following code:
 		
-			\lstinputlisting[language=R, firstline=239, lastline=248]{PS03_answers_OS.R}
+			\lstinputlisting[language=R, firstline=239, lastline=248bboxmarginendforaddto also]{PS03_answers_OS.R}
 			\includegraphics[scale=0.35]{problem4part2graph1}
 			
 			The scatterplot shows a moderate, positive association between the residuals from regressing the presidential candidate vote share on the log of the difference in spending and the residuals from regressing incumbent vote share on the log of the difference in spending. 
@@ -398,14 +398,13 @@
 		\includegraphics[scale=0.35]{problem4part2graph2}
 		
 		
+	\vspace{2.5cm} From the summary table above, the regression line equation is:
 		
-	\vspace{1cm} From the summary table above, the regression line equation is:
+	\vspace{.5cm} 	\textbf{		$\hat{residual from regressing voteshare on difflog}$ = (-1.942e-18) + (2.569e-01)(\textit{residual from regressing presvote on difflog}) + $\epsilon$}
 		
-		\textbf{		$\hat{residual from regressing voteshare on difflog}$ = (-1.942e-18) + (2.569e-01)(\textit{residual from regressing presvote on difflog}) + $\epsilon$}
+		\vspace{.5cm} 	\textbf{\textit{NOTE: }}To simplify the below interpretation, I will use \textit{voteshare} as shorthand for "incumbent's share of the vote," \textit{presvote} as shorthand for "vote share of presidential candidate of the incumbent's party," and \textit{difflog} as shorthand for "log of difference in campaign spending between challenger and incumbent."
 		
-		To simplify the below interpretation, I will use \textit{voteshare} as shorthand for "incumbent's share of the vote," \textit{presvote} as shorthand for "vote share of presidential candidate of the incumbent's party," and \textit{difflog} as shorthand for "log of difference in campaign spending between challenger and incumbent."
-		
-		On average, we could expect the residual from regressing \textit{voteshare} on \textit{difflog} for a data point where the residual from regressing \textit{presvote} on \textit{difflog} is zero to be -1.942e-18, i.e., close to zero. For a one-unit increase in the residual from regressing \textit{presvote} on \textit{difflog}, we can expect the residual from regressing \textit{voteshare} on \textit{difflog} for that data point to increase, on average, by 2.569e-01. \vspace{.5cm}
+			\vspace{.5cm} INTERPRETATION: On average, we could expect the residual from regressing \textit{voteshare} on \textit{difflog} for a data point where the residual from regressing \textit{presvote} on \textit{difflog} is zero to be -1.942e-18, i.e., close to zero. For a one-unit increase in the residual from regressing \textit{presvote} on \textit{difflog}, we can expect the residual from regressing \textit{voteshare} on \textit{difflog} for that data point to increase, on average, by 2.569e-01. \vspace{.5cm}
 		
 		\item Write the prediction equation.
 		
@@ -430,19 +429,19 @@
 			F-statistic:   477 on 1 and 3191 DF,  p-value: < 2.2e-16
 		\end{verbatim}
 		
-		\vspace{.5cm} From the output above:
+		\vspace{2cm} From the output above:
 		
 		$\hat{\beta}_0$ (intercept) = -1.942e-18
 		
 		$\hat{\beta}_1$ (slope) = 2.569e-01
 		
-		\vspace{1cm} Therefore:
+		\vspace{.5cm} Therefore:
 		
-		\textbf{		$\hat{residual from regressing voteshare on difflog}$ = (-1.942e-18) + (2.569e-01)(\textit{residual from regressing presvote on difflog}) + $\epsilon$}
+			\vspace{0.5cm} \textbf{		$\hat{residual from regressing voteshare on difflog}$ = (-1.942e-18) + (2.569e-01)(\textit{residual from regressing presvote on difflog}) + $\epsilon$}
 		
-		To simplify the below interpretation, I will use \textit{voteshare} as shorthand for "incumbent's share of the vote," \textit{presvote} as shorthand for "vote share of presidential candidate of the incumbent's party," and \textit{difflog} as shorthand for "log of difference in campaign spending between challenger and incumbent."
+			\vspace{0.5cm} \textbf{\textit{NOTE:}} To simplify the below interpretation, I will use \textit{voteshare} as shorthand for "incumbent's share of the vote," \textit{presvote} as shorthand for "vote share of presidential candidate of the incumbent's party," and \textit{difflog} as shorthand for "log of difference in campaign spending between challenger and incumbent."
 		
-			On average, we could expect the residual from regressing \textit{voteshare} on \textit{difflog} for a data point where the residual from regressing \textit{presvote} on \textit{difflog} is zero to be -1.942e-18, i.e., close to zero. For a one-unit increase in the residual from regressing \textit{presvote} on \textit{difflog}, we can expect the residual from regressing \textit{voteshare} on \textit{difflog} for that data point to increase, on average, by 2.569e-01.
+				\vspace{0.5cm} INTERPRETATION: On average, we could expect the residual from regressing \textit{voteshare} on \textit{difflog} for a data point where the residual from regressing \textit{presvote} on \textit{difflog} is zero to be -1.942e-18, i.e., close to zero. For a one-unit increase in the residual from regressing \textit{presvote} on \textit{difflog}, we can expect the residual from regressing \textit{voteshare} on \textit{difflog} for that data point to increase, on average, by 2.569e-01.
 		
 	\end{enumerate}
 	
@@ -507,30 +506,14 @@
 		\end{verbatim}
 		
 		
-		??????????????OK BUT WHY ARE THEY IDENTICAL??????????????????
-		??????????????OK BUT WHY ARE THEY IDENTICAL??????????????????
-		??????????????OK BUT WHY ARE THEY IDENTICAL??????????????????
-		??????????????OK BUT WHY ARE THEY IDENTICAL??????????????????
-		??????????????OK BUT WHY ARE THEY IDENTICAL??????????????????
-		??????????????OK BUT WHY ARE THEY IDENTICAL??????????????????
-		??????????????OK BUT WHY ARE THEY IDENTICAL??????????????????
-		??????????????OK BUT WHY ARE THEY IDENTICAL??????????????????
-		??????????????OK BUT WHY ARE THEY IDENTICAL??????????????????
-		??????????????OK BUT WHY ARE THEY IDENTICAL??????????????????
-		??????????????OK BUT WHY ARE THEY IDENTICAL??????????????????
-		??????????????OK BUT WHY ARE THEY IDENTICAL??????????????????
-		??????????????OK BUT WHY ARE THEY IDENTICAL??????????????????
-		??????????????OK BUT WHY ARE THEY IDENTICAL??????????????????
-		??????????????OK BUT WHY ARE THEY IDENTICAL??????????????????
-		??????????????OK BUT WHY ARE THEY IDENTICAL??????????????????
-		??????????????OK BUT WHY ARE THEY IDENTICAL??????????????????
-		??????????????OK BUT WHY ARE THEY IDENTICAL??????????????????
-		??????????????OK BUT WHY ARE THEY IDENTICAL??????????????????
-		??????????????OK BUT WHY ARE THEY IDENTICAL??????????????????
-		??????????????OK BUT WHY ARE THEY IDENTICAL??????????????????
-		??????????????OK BUT WHY ARE THEY IDENTICAL??????????????????
-		??????????????OK BUT WHY ARE THEY IDENTICAL??????????????????
-		??????????????OK BUT WHY ARE THEY IDENTICAL??????????????????
+		\textit{\textbf{*** ACADEMIC INTEGRITY NOTE: I spent days wrestling with this last piece of the problem set, so I turned to Google for assistance. As with all previous assignments in this class and others, I did not use any generative AI, as I oppose AI in general.}}
+		
+		The regressions in problems 1 and 2 involved performing bivariate regressions and storing the residuals from those regressions in separate variables. The regression in problem 4 involved regressing those residuals on one another. Through this process, I partialled out the effects of the covariates on the response variable \textit{(John R. Crooker, Ph. D., 2019, University of Nevada - Las Vegas)}.
+		
+		By the Frisch-Waugh-Lovell Theorem \textit{(StackOverflow)}, the residuals from the partialled-out residual-on-residual regression are identical to the residuals of the full, non-partialled multivariate regression performed in problem 5. 
+		
+		This theorem could be particularly powerful when it comes the underlying goals of quantitative social science -- causal inference, drawing conclusions about a population from sample data -- as the partialling-out approach provides a method for isolating the effect of a single covariate on the response variable. 
+
 		
 	\end{enumerate}
 
