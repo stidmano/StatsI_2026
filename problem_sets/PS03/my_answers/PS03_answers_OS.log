@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.22)  11 NOV 2026 14:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.22)  11 NOV 2026 14:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -821,7 +821,20 @@ Package: listings 2025/11/14 1.11b (Carsten Heinz)
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count361
 )
-(./PS03_answers_OS.aux)
+(./PS03_answers_OS.aux
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+)
 \openout1 = `PS03_answers_OS.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 68.
@@ -842,8 +855,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 68.
 LaTeX Font Info:    ... okay on input line 68.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 68.
 LaTeX Font Info:    ... okay on input line 68.
-
-(/usr/local/texlive/2026/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (/usr/local/texlive/2026/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count362
 \scratchdimen=\dimen318
@@ -896,7 +908,7 @@ File: lstlang2.sty 2025/11/14 1.11b listings language file
 File: lstlang3.sty 2025/11/14 1.11b listings language file
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 90.
+nput line 93.
 
 (./PS03_answers_OS.R
 LaTeX Font Info:    Trying to load font information for OML+cmr on input line 5
@@ -912,39 +924,39 @@ LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
 {/usr/local/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/loc
 al/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] (./PS03_
 answers_OS.R)
-<problem1part2graph1.png, id=27, 1130.2225pt x 1045.9075pt>
+<problem1part2graph1.png, id=28, 1130.2225pt x 1045.9075pt>
 File: problem1part2graph1.png Graphic file (type png)
 <use problem1part2graph1.png>
-Package pdftex.def Info: problem1part2graph1.png  used on input line 122.
+Package pdftex.def Info: problem1part2graph1.png  used on input line 125.
 (pdftex.def)             Requested size: 395.5838pt x 366.0731pt.
 
 [2] (./PS03_answers_OS.R)
-<problem1part2graph2.png, id=41, 1130.2225pt x 1045.9075pt>
+<problem1part2graph2.png, id=42, 1130.2225pt x 1045.9075pt>
 File: problem1part2graph2.png Graphic file (type png)
 <use problem1part2graph2.png>
-Package pdftex.def Info: problem1part2graph2.png  used on input line 128.
+Package pdftex.def Info: problem1part2graph2.png  used on input line 131.
 (pdftex.def)             Requested size: 395.5838pt x 366.0731pt.
  [3 <./problem1part2graph1.png>] (./PS03_answers_OS.R) (./PS03_answers_OS.R) [4
  <./problem1part2graph2.png>] [5] (./PS03_answers_OS.R) [6] (./PS03_answers_OS.
 R)
-<problem2part2graph1.png, id=86, 1300.86pt x 1049.9225pt>
+<problem2part2graph1.png, id=85, 1300.86pt x 1049.9225pt>
 File: problem2part2graph1.png Graphic file (type png)
 <use problem2part2graph1.png>
-Package pdftex.def Info: problem2part2graph1.png  used on input line 218.
+Package pdftex.def Info: problem2part2graph1.png  used on input line 221.
 (pdftex.def)             Requested size: 455.30783pt x 367.47838pt.
 
-Overfull \hbox (14.9275pt too wide) in paragraph at lines 218--219
+Overfull \hbox (14.9275pt too wide) in paragraph at lines 221--222
 [] 
  []
 
-(./PS03_answers_OS.R [7 <./problem2part2graph1.png>])
-<problem2part2graph2.png, id=105, 1300.86pt x 1049.9225pt>
+[7 <./problem2part2graph1.png>] (./PS03_answers_OS.R)
+<problem2part2graph2.png, id=102, 1300.86pt x 1049.9225pt>
 File: problem2part2graph2.png Graphic file (type png)
 <use problem2part2graph2.png>
-Package pdftex.def Info: problem2part2graph2.png  used on input line 224.
+Package pdftex.def Info: problem2part2graph2.png  used on input line 227.
 (pdftex.def)             Requested size: 455.30783pt x 367.47838pt.
 
-Overfull \hbox (14.9275pt too wide) in paragraph at lines 224--225
+Overfull \hbox (14.9275pt too wide) in paragraph at lines 227--228
 [] 
  []
 
@@ -953,10 +965,10 @@ Overfull \hbox (14.9275pt too wide) in paragraph at lines 224--225
 <problem3part2graph1.png, id=146, 1300.86pt x 1049.9225pt>
 File: problem3part2graph1.png Graphic file (type png)
 <use problem3part2graph1.png>
-Package pdftex.def Info: problem3part2graph1.png  used on input line 315.
+Package pdftex.def Info: problem3part2graph1.png  used on input line 318.
 (pdftex.def)             Requested size: 455.30783pt x 367.47838pt.
 
-Overfull \hbox (14.9275pt too wide) in paragraph at lines 315--316
+Overfull \hbox (14.9275pt too wide) in paragraph at lines 318--319
 [] 
  []
 
@@ -964,10 +976,10 @@ Overfull \hbox (14.9275pt too wide) in paragraph at lines 315--316
 <problem3part2graph2.png, id=164, 1300.86pt x 1049.9225pt>
 File: problem3part2graph2.png Graphic file (type png)
 <use problem3part2graph2.png>
-Package pdftex.def Info: problem3part2graph2.png  used on input line 322.
+Package pdftex.def Info: problem3part2graph2.png  used on input line 325.
 (pdftex.def)             Requested size: 455.30783pt x 367.47838pt.
 
-Overfull \hbox (14.9275pt too wide) in paragraph at lines 322--323
+Overfull \hbox (14.9275pt too wide) in paragraph at lines 325--326
 [] 
  []
 
@@ -976,10 +988,10 @@ Overfull \hbox (14.9275pt too wide) in paragraph at lines 322--323
 <problem4part2graph1.png, id=195, 1300.86pt x 1049.9225pt>
 File: problem4part2graph1.png Graphic file (type png)
 <use problem4part2graph1.png>
-Package pdftex.def Info: problem4part2graph1.png  used on input line 409.
+Package pdftex.def Info: problem4part2graph1.png  used on input line 412.
 (pdftex.def)             Requested size: 455.30783pt x 367.47838pt.
 
-Overfull \hbox (14.9275pt too wide) in paragraph at lines 409--410
+Overfull \hbox (14.9275pt too wide) in paragraph at lines 412--413
 [] 
  []
 
@@ -987,59 +999,63 @@ Overfull \hbox (14.9275pt too wide) in paragraph at lines 409--410
 <problem4part2graph2.png, id=229, 1300.86pt x 1049.9225pt>
 File: problem4part2graph2.png Graphic file (type png)
 <use problem4part2graph2.png>
-Package pdftex.def Info: problem4part2graph2.png  used on input line 416.
+Package pdftex.def Info: problem4part2graph2.png  used on input line 419.
 (pdftex.def)             Requested size: 455.30783pt x 367.47838pt.
 
-Overfull \hbox (14.9275pt too wide) in paragraph at lines 416--417
+Overfull \hbox (14.9275pt too wide) in paragraph at lines 419--420
 [] 
  []
 
 
-Overfull \hbox (14.86092pt too wide) in paragraph at lines 421--422
+Overfull \hbox (14.86092pt too wide) in paragraph at lines 424--425
 [] $[]$ \OT1/cmr/bx/n/12 = (-1.942e-18) + (2.569e-01)(\OT1/cmr/bx/it/12 residua
 l
  []
 
 [18 <./problem4part2graph2.png>] (./PS03_answers_OS.R)
-Overfull \hbox (4.2199pt too wide) in paragraph at lines 448--448
+Overfull \hbox (4.2199pt too wide) in paragraph at lines 451--451
  []   \OT1/cmtt/m/n/12 residuals_presvote_difflog  2.569e-01  1.176e-02   21.84
    <2e-16 ***[] 
  []
 
 
-Overfull \hbox (14.86092pt too wide) in paragraph at lines 458--459
+Overfull \hbox (14.86092pt too wide) in paragraph at lines 461--462
 [] $[]$ \OT1/cmr/bx/n/12 = (-1.942e-18) + (2.569e-01)(\OT1/cmr/bx/it/12 residua
 l
  []
 
 [19] [20] (./PS03_answers_OS.R) [21] [22]
-Overfull \hbox (4.21536pt too wide) in paragraph at lines 539--540
+Overfull \hbox (4.21536pt too wide) in paragraph at lines 542--543
 []\OT1/cmr/m/n/12 By the Frisch-Waugh-Lovell The-o-rem \OT1/cmr/m/it/12 (Stack-
 Over-flow)\OT1/cmr/m/n/12 , the resid-u-als from the partialled-
  []
 
 
-Overfull \hbox (3.83034pt too wide) in paragraph at lines 539--540
+Overfull \hbox (3.83034pt too wide) in paragraph at lines 542--543
 \OT1/cmr/m/n/12 out residual-on-residual re-gres-sion are iden-ti-cal to the re
 sid-u-als of the full, non-partialled
  []
 
-[23] (./PS03_answers_OS.aux)
+(./PS03_answers_OS.R) [23] [24] [25] [26] (./PS03_answers_OS.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `PS03_answers_OS.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 27510 strings out of 467525
- 478825 string characters out of 5418982
- 1182588 words of memory out of 5000000
- 55749 multiletter control sequences out of 15000+600000
+ 27538 strings out of 467525
+ 479189 string characters out of 5418982
+ 1182764 words of memory out of 5000000
+ 55756 multiletter control sequences out of 15000+600000
  639173 words of font info for 87 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,6n,104p,3247b,2223s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,10n,104p,3247b,2221s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pf
 b></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
@@ -1049,14 +1065,16 @@ usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
 r/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/
 local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/loc
 al/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/
-texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/t
-exlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/te
-xlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texl
-ive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on PS03_answers_OS.pdf (23 pages, 1658126 bytes).
+texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/t
+exlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/tex
+live/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texl
+ive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texli
+ve/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive
+/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on PS03_answers_OS.pdf (26 pages, 1682846 bytes).
 PDF statistics:
- 360 PDF objects out of 1000 (max. 8388607)
- 290 compressed objects within 3 object streams
- 159 named destinations out of 1000 (max. 500000)
+ 403 PDF objects out of 1000 (max. 8388607)
+ 325 compressed objects within 4 object streams
+ 178 named destinations out of 1000 (max. 500000)
  53 words of extra memory for PDF output out of 10000 (max. 10000000)
 

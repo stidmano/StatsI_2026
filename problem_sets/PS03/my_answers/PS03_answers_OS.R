@@ -311,4 +311,13 @@ summary(reg_residuals) #output of problem 4
 #   Min        1Q    Median        3Q       Max 
 #-0.25928  -0.04737  -0.00121   0.04618   0.33126 
 
-#These results may be identical because __________________________?????????????
+#########################
+# adding Stargazer tables
+#########################
+
+lapply(c("stargazer", "vioplot", "arm"),  pkgTest)
+stargazer(reg_voteshare_difflog) 
+stargazer(reg_presvote_difflog) 
+stargazer(reg_voteshare_presvote) 
+stargazer(reg_residuals) 
+stargazer(reg_voteshare_difflog_presvote)
