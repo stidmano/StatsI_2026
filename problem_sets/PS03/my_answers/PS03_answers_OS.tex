@@ -111,6 +111,8 @@
 			F-statistic:  1853 on 1 and 3191 DF,  p-value: < 2.2e-16  
 		\end{verbatim}
 		
+		On average, an incumbent for whom the log of the difference in campaign spending between them and the challenger is zero would be expected to, on average, receive a 0.579031 share of the vote. For every one-unit increase in the log of the difference in spending between incumbent and challenger, the incumbent would expect to, on average, receive an additional 0.041666 share of the vote.
+		
 		\item Make a scatterplot of the two variables and add the regression line. 	\vspace{0.5cm}
 		
 		First, I create the scatterplot using the following code:
@@ -203,6 +205,8 @@
 			F-statistic: 307.7 on 1 and 3191 DF,  p-value: < 2.2e-16 
 		\end{verbatim}
 		
+		On average, a presidential candidate of the incumbent's party for whom the log of the difference in campaign spending between the incumbent and the challenger is zero would be expected to, on average, receive a 0.507583 share of the vote. For every one-unit increase in the log of the difference in spending between incumbent and challenger, the presidential candidate of the incumbent's party would expect to, on average, receive an additional 0.023837 share of the vote.
+		
 		\item Make a scatterplot of the two variables and add the regression line. 	\vspace{.5cm}
 		
 		First, I create the scatterplot using the following code:
@@ -294,6 +298,8 @@
 			F-statistic:   827 on 1 and 3191 DF,  p-value: < 2.2e-16
 			\end{verbatim}
 			
+			On average, an incumbent for whom the presidential candidate of their own party received no share of the votes can expect to themselves receive a 0.441330 share of the vote. For a one-unit increase in the presidential candidate's vote share (i.e., the candidate moves from 0 votes to a 1.0, or 100 percent share of the votes), the incumbent would expect to, on average, receive an additional 0.388018 share of the votes. 
+			
 		\item Make a scatterplot of the two variables and add the regression line. 
 			\vspace{.5cm}
 			
@@ -382,6 +388,10 @@
 		Multiple R-squared:   0.13,	Adjusted R-squared:  0.1298 
 		F-statistic:   477 on 1 and 3191 DF,  p-value: < 2.2e-16
 		\end{verbatim}
+		
+			\textbf{\textit{NOTE: }}To simplify the below interpretation, I will use \textit{voteshare} as shorthand for "incumbent's share of the vote," \textit{presvote} as shorthand for "vote share of presidential candidate of the incumbent's party," and \textit{difflog} as shorthand for "log of difference in campaign spending between challenger and incumbent."
+		
+		\vspace{.5cm} INTERPRETATION: On average, we could expect the residual from regressing \textit{voteshare} on \textit{difflog} for a data point where the residual from regressing \textit{presvote} on \textit{difflog} is zero to be -1.942e-18, i.e., close to zero. For a one-unit increase in the residual from regressing \textit{presvote} on \textit{difflog}, we can expect the residual from regressing \textit{voteshare} on \textit{difflog} for that data point to increase, on average, by 2.569e-01. \vspace{.5cm}
 		
 		\item Make a scatterplot of the two residuals and add the regression line. 	\vspace{0.5cm}
 		
@@ -474,6 +484,8 @@
 			Multiple R-squared:  0.4496,	Adjusted R-squared:  0.4493 
 			F-statistic:  1303 on 2 and 3190 DF,  p-value: < 2.2e-16
 		\end{verbatim}
+		
+			On average, holding presidential candidate vote share and the log of the difference in campaign spending constant at zero, we would expect the incumbent's vote share to be 0.4486442. On average, holding presidential candidate vote share constant, we would expect a one-unit increase in the log of the difference in campaign spending to be associated with an increase of 0.0355431 in the incumbent's vote share. On average, holding the difference of the log in campaign spending constant, we would expect a presidential candidate vote share increasing from 0 to 100 percent  (i.e., increasing presidential candidate vote share from 0.0 to 1.0) to be associated with a 0.2568770 increase in the incumbent's vote share.
 		
 		\item Write the prediction equation.	\vspace{0.5cm}
 		
