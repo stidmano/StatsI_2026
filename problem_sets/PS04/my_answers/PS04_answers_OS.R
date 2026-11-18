@@ -74,37 +74,46 @@ summary(reg_prestige_income_prof_incomeprofinxn) #intercept & coefficients
 # Problem 1, Part D
 ####################
 
+# no code needed
 
 ####################
 # Problem 1, Part E
 ####################
 
+# no code needed
 
 ####################
 # Problem 1, Part F
 ####################
 
+# no code needed
 
 ####################
 # Problem 1, Part G
 ####################
 
+# no code needed
 
 ####################
 # Problem 2, Part A
 ####################
 
+# no code needed
 
 ####################
 # Problem 2, Part B
 ####################
 
+# no code needed
 
 ####################
 # Problem 2, Part C
 ####################
 
+# no code needed
 
 ####################
 # Problem 2, Part D
 ####################
+
+# no code needed
