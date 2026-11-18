@@ -194,7 +194,13 @@ help(Prestige)
 	
 	$\hat{prestige}$ = 20.8035385 + 0.0032691\textit{income} + 38.1200003\textit{professional} - 0.0024239\textit{(income x professional)} + $\epsilon$
 	
-	\vspace{.5cm} As the value of the \textit{professional} variable changes both the intercept and the slope coefficient for \textit{income}, there are different models for professionals and for non-professionals. 	\vspace{.5cm}
+	The slope coefficient for \textit{income} is 0.0032691. On average, holding professional job status constant, a one-Canadian-dollar increase in income would be associated with a predicted prestige score increase of 0.0032691. 
+	
+	The slope coefficient for \textit{professional} is 38.1200003. Non-professional (i.e., white- and blue-collar) is the reference category. In comparison with non-professional jobs, holding income constant, professionals have, on average, a prestige score that is higher by 38.1200003. 
+	
+	The slope coefficient for \textit{(income x professional)} (i.e., the interation between the \textit{income} and \textit{professional}) variables, is -0.0024239. In comparison with non-professional jobs, on average, the effect of a one-Canadian-dollar increase in income on prestige is -0.0024239 units lower for professionals. 
+	
+	\vspace{.5cm} As the value of the \textit{professional} variable changes both the intercept and the slope coefficient for \textit{income}, there are different models for professionals and for non-professionals. 	
 	
 \textbf{Model for professionals (\textit{professional = 1}):}
 	
@@ -204,7 +210,7 @@ help(Prestige)
 	
 	$\hat{prestige}$ = 58.9235388 + 0.0008452\textit{income} + $\epsilon$
 	
-	On average, for professionals, a one-Canadian-dollar increase in income is associated with a predicted increase in prestige of 0.0008452.
+	On average, for professionals, holding professional status constant, a one-Canadian-dollar increase in income is associated with a predicted increase in prestige of 0.0008452.
 	
 		\vspace{.5cm} \textbf{Model for non-professionals (\textit{professional = 0}):} 
 	
@@ -214,7 +220,7 @@ help(Prestige)
 	
 	$\hat{prestige}$ = 20.8035385 + 0.0032691\textit{income} + $\epsilon$
 	
-		On average, for non-professionals, a one-Canadian-dollar increase in income is associated with a predicted increase in prestige of 0.0032691.
+		On average, for non-professionals, holding professional status constant, a one-Canadian-dollar increase in income is associated with a predicted increase in prestige of 0.0032691.
 
 	
 \newpage
@@ -227,11 +233,11 @@ help(Prestige)
 	
 	Using the model for professionals (\textit{professional = 1}) above:
 	
-	On average, for professionals, a one-Canadian-dollar increase in income is associated with a predicted increase in prestige of 0.0008452. \vspace{.5cm}
+	On average, for professionals, holding professional status constant, a one-Canadian-dollar increase in income is associated with a predicted increase in prestige of 0.0008452. \vspace{.5cm}
 	
 	Using the model for non-professionals (\textit{professional = 0}) above:
 	
-	On average, for non-professionals, a one-Canadian-dollar increase in income is associated with a predicted increase in prestige of 0.0032691.
+	On average, for non-professionals, holding professional status constant, a one-Canadian-dollar increase in income is associated with a predicted increase in prestige of 0.0032691.
 	
 	\vspace{5cm}	
 	\item [(e)]
@@ -261,7 +267,7 @@ help(Prestige)
 	
 	59.7687388 - 58.9235388 = \textbf{0.8452}
 	
-	On average, a 1000-Canadian-dollar increase in income would be associated with an expected prestige score increase of 0.8452.
+	On average, holding professional status constant, a 1000-Canadian-dollar increase in income for professionals would be associated with an expected prestige score increase of 0.8452.
 	
 	\vspace{11cm}
 	
@@ -317,27 +323,67 @@ a precinct that was adjacent to a precinct in the treatment group (since people 
 
 \vspace{.5cm}
 \begin{enumerate}
-	\item [(a)] Use the results from a linear regression to determine whether having these yard signs in a precinct affects vote share (e.g., conduct a hypothesis test with $\alpha = .05$). \vspace{.5cm}
+	\item [(a)] Use the results from a linear regression to determine whether having these yard signs in a precinct affects vote share (e.g., conduct a hypothesis test with $\alpha = .05$). \vspace{6cm}
 	
 	\textbf{ASSUMPTIONS:}
 	
+	To perform inference on regression coefficients, we assume that:
 	
+	1. The outcome variable (Cuccinelli vote share) has a linear relationship with the explanatory variables ("precinct assigned lawn signs" and "precinct adjacent to lawn signs").
+	
+	2. The covariates ("precinct assigned lawn signs" and "precinct adjacent to lawn signs") are independent.
+	
+	3. There is zero mean of errors for any value of the predictor variables ("precinct assigned lawn signs" and "precinct adjacent to lawn signs").
+	
+	4. There is, in expectation, equal variance for all observations. 
+	
+	5. The predictor variables ("precinct assigned lawn signs" and "precinct adjacent to lawn signs") are unrelated with the errors.  \vspace{.5cm}
 	
 	\textbf{HYPOTHESES:}
 	
+	This hypothesis test is only concerned with the coefficient for precincts assigned lawn signs, not the coefficient for precincts adjacent to lawn signs. The t-test, rather than either an omnibus or partial F-test, is the appropriate significance test for a single coefficient. 
 	
+	The hypotheses are as follows:
 	
+	$H_0$: $\beta_1$ = 0
+	
+	$H_a$: $\beta_1$ $\neq$ 0
+	
+	 \vspace{.5cm}
 	\textbf{TEST STATISTIC:} 
 	
+	The formula for the t-statistic is:
 	
+	t = ($\hat{\beta_1}$ - $\beta_null$) / $\hat{\sigma_\beta1}$
 	
+	As the null value for $\beta_1$ is zero, this simplifies to:
+	
+	t = $\hat{\beta_1}$ / $\hat{\sigma_\beta1}$
+	
+	From the output table above:
+	
+	$\hat{\beta_1}$ = 0.042
+	$\hat{\sigma_\beta1}$ = 0.016
+	
+	Therefore:
+	
+	t = 0.042 / 0.016
+	
+\textbf{	t = 2.625}
+	
+		 \vspace{3cm}
 	\textbf{P-VALUE:}
 	
+	From the output table, the sample size of precincts assigned lawn signs is n = 30. Therefore, df = n-1 = 29. 
 	
+		\lstinputlisting[language=R, firstline=101, lastline=101]{PS04_answers_OS.R} 
 	
+	Using R, the two-tailed P-value associated with a t-statistic of t = 2.625 and df = 29 is \textbf{P = 0.01368397.}
+	
+		 \vspace{.5cm}
 	\textbf{CONCLUSION:}
 	
-	
+	The P-value of 0.01368397 is less than the $\alpha$-value of 0.05. At the 5 percent significance level, we can \textbf{reject the null hypothesis} that having anti-McAuliffe lawn signs in a precinct has no effect on Cuccinelli's vote share. 
 	
 	\newpage		
 	\item [(b)]  Use the results to determine whether being
@@ -346,23 +392,65 @@ a precinct that was adjacent to a precinct in the treatment group (since people 
 	
 		\textbf{ASSUMPTIONS:}
 	
+	To perform inference on regression coefficients, we assume that:
 	
+	1. The outcome variable (Cuccinelli vote share) has a linear relationship with the explanatory variables ("precinct assigned lawn signs" and "precinct adjacent to lawn signs").
+	
+	2. The covariates ("precinct assigned lawn signs" and "precinct adjacent to lawn signs") are independent.
+	
+	3. There is zero mean of errors for any value of the predictor variables ("precinct assigned lawn signs" and "precinct adjacent to lawn signs").
+	
+	4. There is, in expectation, equal variance for all observations. 
+	
+	5. The predictor variables ("precinct assigned lawn signs" and "precinct adjacent to lawn signs") are unrelated with the errors.  \vspace{.5cm}
 	
 	\textbf{HYPOTHESES:}
 	
+	This hypothesis test is only concerned with the coefficient for precincts adjacent to lawn signs, not the coefficient for precincts assigned lawn signs. The t-test, rather than either an omnibus or partial F-test, is the appropriate significance test for a single coefficient. 
+	
+	The hypotheses are as follows:
+	
+	$H_0$: $\beta_2$ = 0
+	
+	$H_a$: $\beta_2$ $\neq$ 0
 	
 	
+	\vspace{.5cm}
 	\textbf{TEST STATISTIC:} 
 	
+	The formula for the t-statistic is:
 	
+	t = ($\hat{\beta_1}$ - $\beta_null$) / $\hat{\sigma_\beta1}$
 	
+	As the null value for $\beta_1$ is zero, this simplifies to:
+	
+	t = $\hat{\beta_1}$ / $\hat{\sigma_\beta1}$
+	
+	From the output table above:
+	
+	$\hat{\beta_1}$ = 0.042
+	$\hat{\sigma_\beta1}$ = 0.013
+	
+	Therefore:
+	
+	t = 0.042 / 0.013
+\textbf{	t = 3.23}
+	
+		\vspace{2cm}
 	\textbf{P-VALUE:}
 	
+	From the output table, the sample size of precincts adjacent to lawn signs is n = 76. Therefore, df = n-1 = 75. 
 	
+	\lstinputlisting[language=R, firstline=107, lastline=107]{PS04_answers_OS.R} 
 	
+	Using R, the two-tailed P-value associated with a t-statistic of t = 3.23 and df = 75 is \textbf{P = 0.001838633.}
+	
+		\vspace{.5cm}
 	\textbf{CONCLUSION:}
 	
-	\vspace{7cm}
+	The P-value of 0.001838633 is less than the $\alpha$-value of 0.05. At the 5 percent significance level, we can \textbf{reject the null hypothesis} that being adjacent to precincts with anti-McAuliffe lawn signs has no effect on Cuccinelli's vote share. 
+	
+	\vspace{5cm}
 	\item [(c)] Interpret the coefficient for the constant term substantively. \vspace{.5cm}
 	
 	The constant term 0.302 is the intercept for the prediction equation:

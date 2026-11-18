@@ -98,13 +98,13 @@ summary(reg_prestige_income_prof_incomeprofinxn) #intercept & coefficients
 # Problem 2, Part A
 ####################
 
-# no code needed
+2*pt(-abs(2.625), df = 29)
 
 ####################
 # Problem 2, Part B
 ####################
 
-# no code needed
+2*pt(-abs(3.23), df = 75)
 
 ####################
 # Problem 2, Part C
